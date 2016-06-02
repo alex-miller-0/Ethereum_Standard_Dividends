@@ -1,5 +1,5 @@
 # EthereumStandardDividends
-Drafting a set of crowdsale contracts that release quarterly dividends
+Drafting a set of crowdsale smart contracts that release quarterly dividends
 
 This is just a side project to learn a bit of Solidity programming. This is a set of contracts that can create tokens based on ether deposits and then, after the crowdsale period, allow token holders to withdraw dividends on a quarterly basis. (Essentially I am forking pieces of the DAO and Digix contracts). It is pretty bare bones.
 
@@ -23,6 +23,9 @@ Ethereum smart contracts are written in [Solidity](http://solidity.readthedocs.i
       "jsonrpc": "2.0",
       "result": <address of deployed contract>
     }
+
+## State of a Contract
+The contract, once deployed to the blockchain, has a static state that can be viewed for free by `call`ing its address. To change the state by, e.g. purchasing tokens with ether in this case, requires you to send a transaction to the address with a function call in the `data` parameter. Once the block containing the transaction is mined, the function call will be executed and if all is successful, the state of the contract living on the blockchain will be forever changed (and now viewable to everyone in the world, assuming they are synced).
 
 
 ### Testing
