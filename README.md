@@ -1,7 +1,6 @@
-# EthereumStandardDividends
-Drafting a set of crowdsale smart contracts that release quarterly dividends
+### EthereumStandardDividends
 
-This is just a side project to learn a bit of Solidity programming. This is a set of contracts that can create tokens based on ether deposits and then, after the crowdsale period, allow token holders to withdraw dividends on a quarterly basis. (Essentially I am forking pieces of the DAO and Digix contracts). It is pretty bare bones.
+This is a personal side project to learn a bit of Solidity programming. The project contains a set of contracts that can create tokens based on ether deposits and then, after the crowdsale period, allow token holders to withdraw dividends on a quarterly basis. (Essentially I am forking pieces of the DAO and Digix contracts). It is pretty bare bones.
 
 # Background
 
@@ -49,7 +48,11 @@ Changing the state of the contract (e.g. by purchasing tokens with ether in this
 
 # Contracts
 
-This project contains two sets of contracts. **Token** contracts were forked from [The DAO](https://github.com/slockit/DAO) and are meant to comply with [ERC 20](https://github.com/ethereum/EIPs/issues/20) standards. They represent fungible tokens that are purchased during a crowdsale period. A minimum number of tokens must be purchased before the crowdsale ends; otherwise, all ether is refunded. **Dividend** contracts were forked from the [Digix DAO](https://github.com/DigixGlobal/digixdao-contracts) and allow token holders to request a share of the revenue collected during the previous quarter. To claim dividends, the token holders must send a number of tokens to the dividends contract at the end of the quarter. Strictly speaking, these are not dividends, but are instead *rewards*, as they must be requested by the holder.
+This project contains two sets of contracts. 
+
+**Token** contracts were forked from [The DAO](https://github.com/slockit/DAO) and are meant to comply with [ERC 20](https://github.com/ethereum/EIPs/issues/20) standards. They represent fungible tokens that are purchased during a crowdsale period. A minimum number of tokens must be purchased before the crowdsale ends; otherwise, all ether is refunded. 
+
+**Dividend** contracts **(TODO)** are forked from the [Digix DAO](https://github.com/DigixGlobal/digixdao-contracts) and allow token holders to request a share of the revenue collected during the previous quarter. To claim dividends, the token holders must send a number of tokens to the dividends contract at the end of the quarter. Strictly speaking, these are not dividends, but are instead *rewards*, as they must be requested by the holder.
 
 # Testing and Development
 
