@@ -44,7 +44,7 @@ The contract, once deployed to the blockchain, has a static state that can be vi
       "result": "0x0"
     }
 
-Changing the state of the contract (e.g. by purchasing tokens with ether in this case) requires your transaction to the contract to be *mined*. Thus, you need to send a transaction to the address with enough ether to cover the gas cost. Once the block containing the transaction is successfully mined in the next block, the function call will be executed and if all is successful, the state of the contract living on the blockchain will be forever changed and now viewable to everyone in the world, assuming they are synced. 
+Changing the state of the contract (e.g. by purchasing tokens with ether in this case) requires your transaction to the contract to be *mined*. Thus, you need to send a transaction (again using `eth_sendTransaction`) to the address with enough ether (the `value` argument) to cover the gas cost. Once the block containing the transaction is successfully mined in the next block, the function call will be executed and if all is successful, the state of the contract living on the blockchain will be forever changed and publically viewable to everyone in the world, assuming they are synced. 
 
 # Contracts
 
