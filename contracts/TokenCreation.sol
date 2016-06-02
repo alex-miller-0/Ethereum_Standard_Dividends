@@ -6,10 +6,8 @@ contract TokenCreation is TokenCreationInterface, Token {
         uint _minTokensToCreate,
         uint _closingTime) {
 
-        //closingTime = _closingTime;
-        //minTokensToCreate = _minTokensToCreate;
-        closingTime = 1563358903;
-        minTokensToCreate = 100;
+        closingTime = _closingTime;
+        minTokensToCreate = _minTokensToCreate;
     }
 
     function createTokenProxy(address _tokenHolder) returns (bool success) {

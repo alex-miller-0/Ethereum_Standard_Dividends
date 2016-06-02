@@ -10,8 +10,6 @@ module.exports = {
     "images/": "images/"
   },
   deploy: [
-    "MetaCoin",
-    "ConvertLib",
     "Token",
     "TokenCreationInterface",
     "TokenCreation"
