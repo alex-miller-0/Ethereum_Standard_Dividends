@@ -5,7 +5,7 @@ This is just a side project to learn a bit of Solidity programming. This is a se
 
 ## Writing and Deploying a Smart Contract
 
-Ethereum smart contracts are written in [Solidity](http://solidity.readthedocs.io/en/latest/), which is a programming language made to write like strongly typed javascript, so it is quite easy to learn. Solidity programs compile to Ethereum Virtual Machine (EVM) code, which can be deployed directly to the blockchain via [geth](https://github.com/ethereum/go-ethereum/wiki/Geth) using web3.js in the geth console or through [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) via the `eth_sendTransaction` endpoint, using the following form:
+Ethereum smart contracts are written in [Solidity](http://solidity.readthedocs.io/en/latest/), which is a programming language made to write like strongly typed javascript, so it is quite easy to learn. Solidity programs compile to Ethereum Virtual Machine (EVM) code, which can be deployed directly to the blockchain via [geth](https://github.com/ethereum/go-ethereum/wiki/Geth) using web3.js in the geth console or through [JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) via the `eth_sendTransaction` endpoint. Note that this is also the endpoint you would use to just send some ether to another account, except here you're including EVM code for data and sending to an empty address:
 
     // Request
     curl -X POST  --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{ \
